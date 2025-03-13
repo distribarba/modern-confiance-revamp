@@ -1,30 +1,31 @@
 
 import { Brush, Wrench, Shield, Users, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
     icon: <Brush size={40} className="text-confiance-green" />,
     title: "Limpeza e Conservação",
     description: "Soluções completas de limpeza, paisagismo e coperagem, além de serviços relacionados a coletas seletivas de resíduos.",
-    link: "#contato"
+    link: "/servicos/limpeza-e-conservacao"
   },
   {
     icon: <Wrench size={40} className="text-confiance-green" />,
     title: "Manutenção Predial",
     description: "Serviços de engenharia voltados para conservação, operação, automação e segurança das edificações residenciais, comerciais ou industriais.",
-    link: "#contato"
+    link: "/servicos/manutencao-predial"
   },
   {
     icon: <Shield size={40} className="text-confiance-green" />,
     title: "Portaria, Zeladoria e Recepção",
     description: "Serviços essenciais para manter a boa imagem de uma empresa, indústria ou condomínio.",
-    link: "#contato"
+    link: "/servicos/portaria-zeladoria-recepcao"
   },
   {
     icon: <Users size={40} className="text-confiance-green" />,
     title: "Mão de Obra Temporária",
     description: "Atendimento às demandas sazonais em Facilities ou Recursos Humanos, com extenso e diversificado banco de talentos.",
-    link: "#contato"
+    link: "/servicos/mao-de-obra-temporaria"
   }
 ];
 
@@ -42,17 +43,17 @@ const ServicesSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 staggered-animation">
           {services.map((service, index) => (
-            <div key={index} className="service-card flex flex-col h-full">
+            <div key={index} className="service-card bg-white hover:shadow-xl transition-shadow duration-300 rounded-lg p-6 flex flex-col h-full">
               <div className="mb-6">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-3 text-confiance-navy">{service.title}</h3>
               <p className="text-gray-600 mb-6 flex-grow">{service.description}</p>
-              <a 
-                href={service.link} 
-                className="text-confiance-green font-medium hover:text-confiance-navy transition-colors flex items-center gap-2 mt-auto"
+              <Link 
+                to={service.link} 
+                className="text-confiance-green font-medium hover:text-confiance-navy transition-colors flex items-center gap-2 mt-auto group"
               >
-                Solicitar orçamento
-                <ArrowRight size={16} />
-              </a>
+                Saiba mais
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
           ))}
         </div>
