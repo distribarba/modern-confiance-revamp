@@ -1,9 +1,9 @@
 
-import { CleaningBrush, Wrench, Shield, Users } from 'lucide-react';
+import { Brush, Wrench, Shield, Users, ArrowRight } from 'lucide-react';
 
 const services = [
   {
-    icon: <CleaningBrush size={40} className="text-confiance-green" />,
+    icon: <Brush size={40} className="text-confiance-green" />,
     title: "Limpeza e Conservação",
     description: "Soluções completas de limpeza, paisagismo e coperagem, além de serviços relacionados a coletas seletivas de resíduos.",
     link: "#contato"
