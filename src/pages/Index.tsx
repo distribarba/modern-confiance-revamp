@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import ServicesSection from "../components/ServicesSection";
 import BenefitsSection from "../components/BenefitsSection";
+import CalculatorsSection from "../components/CalculatorsSection";
 import AboutSection from "../components/AboutSection";
 import ClientsSection from "../components/ClientsSection";
 import ContactSection from "../components/ContactSection";
@@ -17,6 +18,7 @@ const Index = () => {
       <HeroSection />
       <ServicesSection />
       <BenefitsSection />
+      <CalculatorsSection />
       
       {/* CTA Section */}
       <section className="py-16 bg-confiance-navy text-white">
