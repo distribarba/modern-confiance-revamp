@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import WhatsappButton from "./WhatsappButton";
+import { useEffect } from "react";
 
 interface ServiceLayoutProps {
   title: string;
@@ -13,6 +14,11 @@ interface ServiceLayoutProps {
 }
 
 const ServiceLayout = ({ title, description, backgroundImage, children }: ServiceLayoutProps) => {
+  // Add scroll to top effect when the page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar isFixed={true} />

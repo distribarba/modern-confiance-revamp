@@ -79,13 +79,6 @@ const BenefitsSection = () => {
             >
               Solicite uma Proposta Personalizada
             </a>
-            <Link
-              to="/beneficios"
-              className="text-confiance-navy font-medium hover:text-confiance-green transition-colors flex items-center gap-2 justify-center"
-            >
-              Ver todos os benefícios
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
           </div>
         </div>
       </div>

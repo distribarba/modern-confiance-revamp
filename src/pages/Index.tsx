@@ -12,8 +12,20 @@ import WhatsappButton from "../components/WhatsappButton";
 import YouTubeVideo from "../components/YouTubeVideo";
 import FAQSection from "../components/FAQSection";
 import { ArrowRight } from "lucide-react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Index = () => {
+  // Add scroll to top effect when the page loads
+  const { pathname, hash } = useLocation();
+  
+  useEffect(() => {
+    // If there's no hash in the URL, scroll to top
+    if (!hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+
   return (
     <div className="min-h-screen">
       <Navbar />
