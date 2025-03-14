@@ -9,6 +9,7 @@ import ClientsSection from "../components/ClientsSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import WhatsappButton from "../components/WhatsappButton";
+import YouTubeVideo from "../components/YouTubeVideo";
 import { ArrowRight } from "lucide-react";
 
 const Index = () => {
@@ -19,6 +20,22 @@ const Index = () => {
       <ServicesSection />
       <BenefitsSection />
       <CalculatorsSection />
+      
+      {/* Seção de Vídeo */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-3xl mx-auto mb-10 staggered-animation">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Confira Nosso Trabalho</h2>
+            <div className="h-1 w-20 bg-confiance-green mx-auto mb-6"></div>
+            <p className="text-lg text-gray-700">
+              Veja como a Confiance transforma ambientes e oferece serviços de excelência.
+            </p>
+          </div>
+          <div className="max-w-sm mx-auto">
+            <YouTubeVideo videoId="vJq7P_Ubym0" title="Confiance Serviços Especializados" />
+          </div>
+        </div>
+      </section>
       
       {/* CTA Section */}
       <section className="py-16 bg-confiance-navy text-white">
