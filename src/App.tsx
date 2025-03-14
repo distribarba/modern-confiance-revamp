@@ -11,6 +11,7 @@ import ServiceManutencao from "./pages/ServiceManutencao";
 import ServicePortaria from "./pages/ServicePortaria";
 import ServiceMaoDeObra from "./pages/ServiceMaoDeObra";
 import AllServices from "./pages/AllServices";
+import AllBenefits from "./pages/AllBenefits";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/servicos" element={<AllServices />} />
+          <Route path="/beneficios" element={<AllBenefits />} />
           <Route path="/servicos/limpeza-e-conservacao" element={<ServiceLimpeza />} />
           <Route path="/servicos/manutencao-predial" element={<ServiceManutencao />} />
           <Route path="/servicos/portaria-zeladoria-recepcao" element={<ServicePortaria />} />

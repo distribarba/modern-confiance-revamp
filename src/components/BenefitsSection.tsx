@@ -1,5 +1,6 @@
 
-import { CheckCircle2, TrendingUp, Shield, DollarSign, Scale, Clock } from 'lucide-react';
+import { CheckCircle2, TrendingUp, Shield, DollarSign, Scale, Clock, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const BenefitsSection = () => {
   const benefits = [
@@ -61,13 +62,20 @@ const BenefitsSection = () => {
           <p className="text-gray-700 mb-6 text-center">
             Empresas que terceirizam serviços com a Confiance reportam, em média, economia de 25% nos custos operacionais e aumento de 40% na satisfação dos usuários finais.
           </p>
-          <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#contato" 
               className="button-secondary inline-flex items-center justify-center"
             >
               Solicite uma Proposta Personalizada
             </a>
+            <Link
+              to="/beneficios"
+              className="text-confiance-navy font-medium hover:text-confiance-green transition-colors flex items-center gap-2 justify-center"
+            >
+              Ver todos os benefícios
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </div>
       </div>
