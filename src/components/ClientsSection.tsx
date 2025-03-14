@@ -1,40 +1,39 @@
-
 import { useEffect, useState } from 'react';
 
 const ClientsSection = () => {
-  // Simulação de logos de clientes
+  // Logos reais de clientes
   const clientLogos = [
     {
-      name: "Cliente 1",
-      logo: "https://placehold.co/200x100/2F2E69/FFF?text=Cliente+1"
+      name: "Nova Alameda Residencial",
+      logo: "/lovable-uploads/d3d95d4f-b7d3-433c-a957-8c4b7d2f9f61.png"
     },
     {
-      name: "Cliente 2",
-      logo: "https://placehold.co/200x100/00B67A/FFF?text=Cliente+2"
+      name: "Rossi Mais+ Jardim Imperial",
+      logo: "/lovable-uploads/924a7bc9-ea91-4247-8035-bc7c24760eee.png"
     },
     {
-      name: "Cliente 3",
-      logo: "https://placehold.co/200x100/2F2E69/FFF?text=Cliente+3"
+      name: "Rio Prefeitura - Fazenda e Planejamento",
+      logo: "/lovable-uploads/c851a8cc-ea6b-465d-9ca4-57c6430a1ee2.png"
     },
     {
-      name: "Cliente 4",
-      logo: "https://placehold.co/200x100/00B67A/FFF?text=Cliente+4"
+      name: "SECTI",
+      logo: "/lovable-uploads/8bb3b941-f955-4e57-a5e3-268e8a91a164.png"
     },
     {
-      name: "Cliente 5",
-      logo: "https://placehold.co/200x100/2F2E69/FFF?text=Cliente+5"
+      name: "PRODERJ",
+      logo: "/lovable-uploads/6efda96d-6068-4f3c-86a6-2faadd5746d5.png"
     },
     {
-      name: "Cliente 6",
-      logo: "https://placehold.co/200x100/00B67A/FFF?text=Cliente+6"
+      name: "ANTT",
+      logo: "/lovable-uploads/a854899d-a164-42d8-aae6-305417d21314.png"
     },
     {
-      name: "Cliente 7",
-      logo: "https://placehold.co/200x100/2F2E69/FFF?text=Cliente+7"
+      name: "Casa França-Brasil",
+      logo: "/lovable-uploads/629b5e90-4444-4c88-9232-e61cbeca5a54.png"
     },
     {
-      name: "Cliente 8",
-      logo: "https://placehold.co/200x100/00B67A/FFF?text=Cliente+8"
+      name: "Residencial Gênesis",
+      logo: "/lovable-uploads/e60b3383-4c38-4c5d-954a-c1fc30d71d2e.png"
     }
   ];
 
@@ -88,7 +87,7 @@ const ClientsSection = () => {
               <img 
                 src={client.logo} 
                 alt={client.name} 
-                className="max-h-16 object-contain filter grayscale hover:grayscale-0 transition-all"
+                className="max-h-16 object-contain"
               />
             </div>
           ))}
