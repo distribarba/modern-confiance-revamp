@@ -7,25 +7,25 @@ const services = [
     icon: <Brush size={40} className="text-confiance-green" />,
     title: "Limpeza e Conservação",
     description: "Soluções completas de limpeza, paisagismo e coperagem, além de serviços relacionados a coletas seletivas de resíduos.",
-    link: "/servicos/limpeza-e-conservacao#"
+    link: "/servicos/limpeza-e-conservacao"
   },
   {
     icon: <Wrench size={40} className="text-confiance-green" />,
     title: "Manutenção Predial",
     description: "Serviços de engenharia voltados para conservação, operação, automação e segurança das edificações residenciais, comerciais ou industriais.",
-    link: "/servicos/manutencao-predial#"
+    link: "/servicos/manutencao-predial"
   },
   {
     icon: <Shield size={40} className="text-confiance-green" />,
     title: "Portaria, Zeladoria e Recepção",
     description: "Serviços essenciais para manter a boa imagem de uma empresa, indústria ou condomínio.",
-    link: "/servicos/portaria-zeladoria-recepcao#"
+    link: "/servicos/portaria-zeladoria-recepcao"
   },
   {
     icon: <Users size={40} className="text-confiance-green" />,
     title: "Mão de Obra Temporária",
     description: "Atendimento às demandas sazonais em Facilities ou Recursos Humanos, com extenso e diversificado banco de talentos.",
-    link: "/servicos/mao-de-obra-temporaria#"
+    link: "/servicos/mao-de-obra-temporaria"
   }
 ];
 

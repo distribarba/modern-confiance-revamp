@@ -11,9 +11,9 @@ const Footer = () => {
           {/* Sobre a empresa */}
           <div>
             <img 
-              src="/lovable-uploads/80ffe772-5484-4688-9345-791645d8301a.png" 
+              src="/lovable-uploads/000b17b9-e57a-4f25-b47c-ebccbc05f2e7.png" 
               alt="Confiance Serviços Especializados" 
-              className="h-14 mb-6 brightness-200"
+              className="h-14 mb-6"
             />
             <p className="text-gray-300 mb-6">
               Com nossos colaboradores, a CONFIANCE SERVIÇOS ESPECIALIZADOS está presente no estado do Rio de Janeiro atendendo a empresas públicas e privadas, através de soluções em Limpeza e Conservação, Manutenção Predial, Recursos Humanos e Mão de Obra Temporária.
