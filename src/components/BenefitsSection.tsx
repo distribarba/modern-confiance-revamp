@@ -60,7 +60,7 @@ const BenefitsSection = () => {
         <div className="flex justify-center mt-10 mb-10">
           <Link
             to="/beneficios"
-            className="button-secondary flex items-center gap-2 group"
+            className="button-primary flex items-center gap-2 group"
           >
             Ver todos os Benefícios
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />

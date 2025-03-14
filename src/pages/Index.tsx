@@ -10,6 +10,7 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import WhatsappButton from "../components/WhatsappButton";
 import YouTubeVideo from "../components/YouTubeVideo";
+import FAQSection from "../components/FAQSection";
 import { ArrowRight } from "lucide-react";
 
 const Index = () => {
@@ -57,6 +58,7 @@ const Index = () => {
       
       <AboutSection />
       <ClientsSection />
+      <FAQSection />
       <ContactSection />
       <Footer />
       <WhatsappButton />
