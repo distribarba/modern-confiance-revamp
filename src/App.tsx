@@ -10,6 +10,7 @@ import ServiceLimpeza from "./pages/ServiceLimpeza";
 import ServiceManutencao from "./pages/ServiceManutencao";
 import ServicePortaria from "./pages/ServicePortaria";
 import ServiceMaoDeObra from "./pages/ServiceMaoDeObra";
+import AllServices from "./pages/AllServices";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/servicos" element={<AllServices />} />
           <Route path="/servicos/limpeza-e-conservacao" element={<ServiceLimpeza />} />
           <Route path="/servicos/manutencao-predial" element={<ServiceManutencao />} />
           <Route path="/servicos/portaria-zeladoria-recepcao" element={<ServicePortaria />} />

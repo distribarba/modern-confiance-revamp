@@ -57,6 +57,16 @@ const ServicesSection = () => {
             </div>
           ))}
         </div>
+        
+        <div className="mt-12 text-center">
+          <Link 
+            to="/servicos" 
+            className="inline-flex items-center justify-center gap-2 bg-confiance-navy hover:bg-confiance-navy/90 text-white px-6 py-3 rounded-md font-medium transition-colors group"
+          >
+            Ver todos os nossos serviços
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
       </div>
     </section>
   );
