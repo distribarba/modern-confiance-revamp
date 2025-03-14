@@ -1,4 +1,6 @@
+
 import { useEffect, useState } from 'react';
+import { useIsMobile } from '../hooks/use-mobile';
 
 const ClientsSection = () => {
   // Logos reais de clientes
@@ -60,6 +62,7 @@ const ClientsSection = () => {
   ];
 
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -81,13 +84,16 @@ const ClientsSection = () => {
         </div>
         
         {/* Logos de clientes */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mb-20">
+        <div className={`grid ${isMobile ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4'} gap-8 mb-20`}>
           {clientLogos.map((client, index) => (
-            <div key={index} className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div 
+              key={index} 
+              className="flex items-center justify-center p-6 md:p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
               <img 
                 src={client.logo} 
                 alt={client.name} 
-                className="max-h-16 object-contain"
+                className="max-h-24 md:max-h-28 w-auto object-contain"
               />
             </div>
           ))}
