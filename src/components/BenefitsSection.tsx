@@ -56,8 +56,18 @@ const BenefitsSection = () => {
             </div>
           ))}
         </div>
+
+        <div className="flex justify-center mt-10 mb-10">
+          <Link
+            to="/beneficios"
+            className="button-secondary flex items-center gap-2 group"
+          >
+            Ver todos os Benefícios
+            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
         
-        <div className="mt-16 bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-3xl mx-auto">
+        <div className="mt-4 bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-3xl mx-auto">
           <h3 className="text-2xl font-semibold text-confiance-navy mb-4 text-center">Transforme sua Gestão Hoje Mesmo</h3>
           <p className="text-gray-700 mb-6 text-center">
             Empresas que terceirizam serviços com a Confiance reportam, em média, economia de 25% nos custos operacionais e aumento de 40% na satisfação dos usuários finais.

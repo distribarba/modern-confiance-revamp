@@ -20,8 +20,8 @@ const AboutSection = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-confiance-navy to-confiance-green rounded-lg blur opacity-20"></div>
               <div className="relative bg-white rounded-lg shadow-xl overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" 
-                  alt="Equipe Confiance" 
+                  src="/lovable-uploads/1070bfa3-7b7b-40e4-8006-60811e1fd6d8.png" 
+                  alt="Confiance Serviços Especializados" 
                   className="w-full h-auto object-cover"
                 />
               </div>
