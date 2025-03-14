@@ -8,28 +8,26 @@ import WhatsappButton from "./WhatsappButton";
 interface ServiceLayoutProps {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  backgroundImage: string;
   children: React.ReactNode;
 }
 
-const ServiceLayout = ({ title, description, icon, children }: ServiceLayoutProps) => {
+const ServiceLayout = ({ title, description, backgroundImage, children }: ServiceLayoutProps) => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <Navbar isFixed={true} />
       
       <main className="flex-grow">
-        <div className="bg-confiance-navy py-16 md:py-24">
+        <div 
+          className="bg-confiance-navy py-16 md:py-24 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `linear-gradient(rgba(47, 46, 105, 0.85), rgba(47, 46, 105, 0.9)), url(${backgroundImage})` }}
+        >
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto text-center text-white">
               <Link to="/#servicos" className="inline-flex items-center text-confiance-green hover:text-white transition-colors mb-6">
                 <ArrowLeft size={16} className="mr-2" />
                 Voltar para todos os serviços
               </Link>
-              <div className="flex justify-center mb-6">
-                <div className="bg-white/10 p-5 rounded-full">
-                  {icon}
-                </div>
-              </div>
               <h1 className="text-3xl md:text-5xl font-bold mb-6">{title}</h1>
               <p className="text-lg md:text-xl text-gray-200 mb-8">{description}</p>
             </div>

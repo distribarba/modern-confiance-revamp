@@ -1,4 +1,3 @@
-
 import { Shield } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
 
@@ -7,7 +6,7 @@ const ServicePortaria = () => {
     <ServiceLayout 
       title="Portaria, Zeladoria e Recepção" 
       description="Serviços essenciais para manter a boa imagem de uma empresa, indústria ou condomínio."
-      icon={<Shield size={60} className="text-confiance-green" />}
+      backgroundImage="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
         <div>
