@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import WhatsappButton from "./WhatsappButton";
 import { useEffect } from "react";
+import { useIsMobile } from "../hooks/use-mobile";
 
 interface ServiceLayoutProps {
   title: string;
@@ -19,6 +20,8 @@ const ServiceLayout = ({ title, description, backgroundImage, children }: Servic
     window.scrollTo(0, 0);
   }, []);
   
+  const isMobile = useIsMobile();
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar isFixed={true} />
@@ -30,7 +33,10 @@ const ServiceLayout = ({ title, description, backgroundImage, children }: Servic
         >
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto text-center text-white">
-              <Link to="/#servicos" className="inline-flex items-center text-confiance-green hover:text-white transition-colors mb-6">
+              <Link 
+                to="/#servicos" 
+                className={`inline-flex items-center text-confiance-green hover:text-white transition-colors mb-6 ${isMobile ? 'mt-10' : ''}`}
+              >
                 <ArrowLeft size={16} className="mr-2" />
                 Voltar para todos os serviços
               </Link>
