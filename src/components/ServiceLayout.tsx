@@ -34,7 +34,7 @@ const ServiceLayout = ({ title, description, backgroundImage, children }: Servic
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto text-center text-white">
               <Link 
-                to="/#servicos" 
+                to="/servicos" 
                 className={`inline-flex items-center text-confiance-green hover:text-white transition-colors mb-6 ${isMobile ? 'mt-10' : ''}`}
               >
                 <ArrowLeft size={16} className="mr-2" />
