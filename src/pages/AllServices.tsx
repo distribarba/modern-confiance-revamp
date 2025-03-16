@@ -1,4 +1,3 @@
-
 import { Brush, Wrench, Shield, Users, FileCheck, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
@@ -29,7 +28,7 @@ const AllServices = () => {
       icon: <FileCheck size={40} className="text-confiance-green" />,
       title: "Fiscalização de Serviços e Clientes",
       description: "Com orientação adequada em Relações Humanas no atendimento ao público, nossos fiscais de serviços, orientam e organizam funcionários no correto cumprimento do dever, em busca da satisfação do cliente.",
-      link: "/servicos/portaria-zeladoria-recepcao"
+      link: "/servicos/fiscalizacao-servicos-clientes"
     },
     {
       icon: <Wrench size={40} className="text-confiance-green" />,

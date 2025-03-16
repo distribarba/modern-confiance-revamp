@@ -10,6 +10,7 @@ import ServiceLimpeza from "./pages/ServiceLimpeza";
 import ServiceManutencao from "./pages/ServiceManutencao";
 import ServicePortaria from "./pages/ServicePortaria";
 import ServiceMaoDeObra from "./pages/ServiceMaoDeObra";
+import ServiceFiscalizacao from "./pages/ServiceFiscalizacao";
 import AllServices from "./pages/AllServices";
 import AllBenefits from "./pages/AllBenefits";
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/servicos/manutencao-predial" element={<ServiceManutencao />} />
           <Route path="/servicos/portaria-zeladoria-recepcao" element={<ServicePortaria />} />
           <Route path="/servicos/mao-de-obra-temporaria" element={<ServiceMaoDeObra />} />
+          <Route path="/servicos/fiscalizacao-servicos-clientes" element={<ServiceFiscalizacao />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
