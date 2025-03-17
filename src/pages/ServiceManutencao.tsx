@@ -1,3 +1,4 @@
+
 import { Wrench } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
 
@@ -6,7 +7,7 @@ const ServiceManutencao = () => {
     <ServiceLayout 
       title="Manutenção Predial" 
       description="Serviços de engenharia voltados para conservação, operação, automação e segurança das edificações residenciais, comerciais ou industriais."
-      backgroundImage="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      backgroundImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
         <div>
@@ -23,7 +24,7 @@ const ServiceManutencao = () => {
         </div>
         <div>
           <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
             alt="Manutenção predial profissional" 
             className="rounded-lg shadow-lg w-full h-auto"
           />
