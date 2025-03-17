@@ -1,4 +1,3 @@
-
 import ServiceLayout from "../components/ServiceLayout";
 
 const ServiceMaoDeObra = () => {
@@ -6,7 +5,7 @@ const ServiceMaoDeObra = () => {
     <ServiceLayout 
       title="Mão de Obra Temporária" 
       description="Atendimento às demandas sazonais em Facilities ou Recursos Humanos, com extenso e diversificado banco de talentos."
-      backgroundImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      backgroundImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
         <div>
@@ -23,7 +22,7 @@ const ServiceMaoDeObra = () => {
         </div>
         <div>
           <img 
-            src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
             alt="Equipe de profissionais temporários" 
             className="rounded-lg shadow-lg w-full h-auto"
           />
