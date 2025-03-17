@@ -38,9 +38,21 @@ const Navbar = ({ isFixed = false }: NavbarProps) => {
         className={`text-confiance-navy hover:text-confiance-green font-medium transition-colors duration-500 relative ${
           isActive ? 'text-confiance-green' : ''
         }`}
-        onClick={() => {
+        onClick={(e) => {
+          e.preventDefault();
           setActiveItem(hash);
           setIsOpen(false);
+          
+          // Verificar se estamos na homepage ou não
+          if (isHomePage) {
+            const element = document.getElementById(hash);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          } else {
+            // Se não estiver na homepage, redirecionar e adicionar um callback
+            window.location.href = linkPath;
+          }
         }}
       >
         {label}
@@ -72,7 +84,23 @@ const Navbar = ({ isFixed = false }: NavbarProps) => {
             {getNavLink('servicos', 'Serviços')}
             {getNavLink('sobre', 'Quem Somos')}
             {getNavLink('clientes', 'Clientes')}
-            <a href="/#contato" className="button-primary transition-colors duration-500 hover:bg-confiance-green">Fale Conosco</a>
+            <a 
+              href="/#contato" 
+              className="button-primary transition-colors duration-500 hover:bg-confiance-green"
+              onClick={(e) => {
+                e.preventDefault();
+                if (location.pathname === '/') {
+                  const element = document.getElementById('contato');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                } else {
+                  window.location.href = '/#contato';
+                }
+              }}
+            >
+              Fale Conosco
+            </a>
           </div>
           
           <div className="md:hidden">
@@ -92,8 +120,19 @@ const Navbar = ({ isFixed = false }: NavbarProps) => {
           {getNavLink('clientes', 'Clientes')}
           <a 
             href="/#contato" 
-            onClick={() => setIsOpen(false)} 
             className="button-primary text-center transition-colors duration-500 hover:bg-confiance-green"
+            onClick={(e) => {
+              e.preventDefault();
+              setIsOpen(false);
+              if (location.pathname === '/') {
+                const element = document.getElementById('contato');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              } else {
+                window.location.href = '/#contato';
+              }
+            }}
           >
             Fale Conosco
           </a>

@@ -100,7 +100,7 @@ const Footer = () => {
               </li>
               <li className="flex">
                 <Mail size={20} className="text-confiance-green mr-3 flex-shrink-0" />
-                <span className="text-gray-300">confiance@confiance.rio</span>
+                <span className="text-gray-300">comercial@confiance.rio</span>
               </li>
               <li className="flex">
                 <Clock size={20} className="text-confiance-green mr-3 flex-shrink-0" />
