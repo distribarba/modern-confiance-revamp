@@ -1,3 +1,4 @@
+
 import { Brush } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
 
@@ -6,7 +7,7 @@ const ServiceLimpeza = () => {
     <ServiceLayout 
       title="Limpeza e Conservação" 
       description="Soluções completas de limpeza, paisagismo e coperagem, além de serviços relacionados a coletas seletivas de resíduos."
-      backgroundImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      backgroundImage="/lovable-uploads/e60b3383-4c38-4c5d-954a-c1fc30d71d2e.png"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
         <div>
@@ -23,8 +24,8 @@ const ServiceLimpeza = () => {
         </div>
         <div>
           <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-            alt="Equipe de limpeza profissional" 
+            src="/lovable-uploads/1070bfa3-7b7b-40e4-8006-60811e1fd6d8.png" 
+            alt="Equipe de limpeza profissional em ambiente corporativo" 
             className="rounded-lg shadow-lg w-full h-auto"
           />
         </div>

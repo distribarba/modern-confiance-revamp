@@ -7,7 +7,7 @@ const ServiceFiscalizacao = () => {
     <ServiceLayout 
       title="Fiscalização de Serviços e Clientes" 
       description="Com orientação adequada em Relações Humanas no atendimento ao público, nossos fiscais de serviços, orientam e organizam funcionários no correto cumprimento do dever, em busca da satisfação do cliente."
-      backgroundImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      backgroundImage="/lovable-uploads/629b5e90-4444-4c88-9232-e61cbeca5a54.png"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
         <div>
@@ -24,7 +24,7 @@ const ServiceFiscalizacao = () => {
         </div>
         <div>
           <img 
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+            src="/lovable-uploads/a854899d-a164-42d8-aae6-305417d21314.png" 
             alt="Fiscalização de serviços profissional" 
             className="rounded-lg shadow-lg w-full h-auto"
           />
