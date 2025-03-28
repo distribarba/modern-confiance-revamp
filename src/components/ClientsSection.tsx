@@ -76,7 +76,7 @@ const ClientsSection = () => {
   return (
     <section id="clientes" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16 staggered-animation">
+        <div className="text-center max-w-3xl mx-auto mb-8 staggered-animation">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Nossos Clientes</h2>
           <div className="h-1 w-20 bg-confiance-green mx-auto mb-6"></div>
           <p className="text-lg text-gray-700">
@@ -84,7 +84,7 @@ const ClientsSection = () => {
           </p>
         </div>
         
-        {/* Substituir a grade de logos pelo LogoBanner */}
+        {/* LogoBanner */}
         <div className="mb-20">
           <LogoBanner logos={clientLogos} />
         </div>
