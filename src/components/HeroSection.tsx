@@ -23,11 +23,26 @@ const HeroSection = () => {
             </div>
             <div className="mt-10 flex items-center">
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-10 h-10 rounded-full bg-gray-300 border-2 border-white flex items-center justify-center text-xs font-bold text-white" style={{ backgroundColor: i % 2 === 0 ? '#2F2E69' : '#00B67A' }}>
-                    {String.fromCharCode(64 + i)}
-                  </div>
-                ))}
+                <img 
+                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" 
+                  alt="Cliente satisfeito" 
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" 
+                  alt="Cliente satisfeito" 
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" 
+                  alt="Cliente satisfeito" 
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" 
+                  alt="Cliente satisfeito" 
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                />
               </div>
               <p className="ml-4 text-sm text-gray-600">
                 + de <span className="font-bold text-confiance-navy">100 clientes</span> satisfeitos
