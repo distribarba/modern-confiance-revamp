@@ -34,7 +34,7 @@ const LogoBanner = ({
           {duplicatedLogos.map((logo, index) => <div key={index} style={{
           width: '180px',
           height: '120px'
-        }} className="flex-shrink-0 mx-4 md:mx-8 bg-white p-4 rounded-lg shadow-sm flex items-center justify-center px-[15px]">
+        }} className="flex-shrink-0 mx-4 md:mx-8 bg-white p-4 rounded-lg shadow-sm flex items-center justify-center px-[14px]">
               <img src={logo.src} alt={logo.alt} className="max-h-16 md:max-h-20 w-auto object-contain" />
             </div>)}
         </div>
