@@ -24,15 +24,7 @@ const LogoBanner = ({
       {image && <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>}
       
       <div className="container mx-auto px-4 md:px-6 mb-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${image ? 'text-white' : 'text-confiance-navy'}`}>
-            Nossos Parceiros
-          </h2>
-          <div className="h-1 w-20 bg-confiance-green mx-auto mb-6"></div>
-          <p className={`text-lg ${image ? 'text-white/90' : 'text-gray-700'}`}>
-            Empresas que confiam em nossos serviços
-          </p>
-        </div>
+        
       </div>
 
       <div className="relative z-10">
