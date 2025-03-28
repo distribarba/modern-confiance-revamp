@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 import WhatsappButton from "../components/WhatsappButton";
 import YouTubeVideo from "../components/YouTubeVideo";
 import FAQSection from "../components/FAQSection";
+import LogoBanner from "../components/LogoBanner";
 import { ArrowRight } from "lucide-react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -25,6 +26,34 @@ const Index = () => {
       window.scrollTo(0, 0);
     }
   }, [pathname, hash]);
+
+  // Sample logos for the LogoBanner component
+  const partnerLogos = [
+    {
+      src: "/lovable-uploads/d3d95d4f-b7d3-433c-a957-8c4b7d2f9f61.png",
+      alt: "Nova Alameda Residencial"
+    },
+    {
+      src: "/lovable-uploads/924a7bc9-ea91-4247-8035-bc7c24760eee.png",
+      alt: "Rossi Mais+ Jardim Imperial"
+    },
+    {
+      src: "/lovable-uploads/c851a8cc-ea6b-465d-9ca4-57c6430a1ee2.png",
+      alt: "Rio Prefeitura"
+    },
+    {
+      src: "/lovable-uploads/8bb3b941-f955-4e57-a5e3-268e8a91a164.png",
+      alt: "SECTI"
+    },
+    {
+      src: "/lovable-uploads/6efda96d-6068-4f3c-86a6-2faadd5746d5.png",
+      alt: "PRODERJ"
+    },
+    {
+      src: "/lovable-uploads/a854899d-a164-42d8-aae6-305417d21314.png",
+      alt: "ANTT"
+    }
+  ];
 
   return (
     <div className="min-h-screen">
@@ -49,6 +78,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Logo Banner Section */}
+      <LogoBanner logos={partnerLogos} />
       
       {/* CTA Section */}
       <section className="py-16 bg-confiance-navy text-white">
