@@ -1,4 +1,7 @@
+
 import React from 'react';
+import { useIsMobile } from '../hooks/use-mobile';
+
 interface LogoBannerProps {
   logos: Array<{
     src: string;
@@ -6,12 +9,19 @@ interface LogoBannerProps {
   }>;
   image?: string; // Optional background image
 }
+
 const LogoBanner = ({
   logos,
   image
 }: LogoBannerProps) => {
+  const isMobile = useIsMobile();
+  
   // We duplicate the logos to create a seamless infinite scroll effect
   const duplicatedLogos = [...logos, ...logos];
+  
+  // Animation duration: 20s for mobile, 30s for desktop
+  const animationDuration = isMobile ? 20 : 30;
+  
   return <section className={`w-full py-12 overflow-hidden relative ${image ? 'bg-cover bg-center' : 'bg-gray-50'}`} style={image ? {
     backgroundImage: `url(${image})`
   } : {}}>
@@ -52,10 +62,11 @@ const LogoBanner = ({
           }
           
           .logos-scroll-animation {
-            animation: scroll 30s linear infinite;
+            animation: scroll ${animationDuration}s linear infinite;
           }
         `}
       </style>
     </section>;
 };
+
 export default LogoBanner;
