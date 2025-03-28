@@ -19,8 +19,8 @@ const LogoBanner = ({
   // We duplicate the logos to create a seamless infinite scroll effect
   const duplicatedLogos = [...logos, ...logos];
 
-  // Animation duration: Aumentando a velocidade: 12s para mobile, 18s para desktop
-  const animationDuration = isMobile ? 12 : 18;
+  // Animation duration: Aumentando mais a velocidade: 8s para mobile, 12s para desktop
+  const animationDuration = isMobile ? 8 : 12;
   
   return (
     <section className={`w-full py-8 overflow-hidden relative ${image ? 'bg-cover bg-center' : 'bg-gray-50'}`} 
