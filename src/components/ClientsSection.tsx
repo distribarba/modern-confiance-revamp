@@ -1,6 +1,6 @@
 
-import { useEffect, useState } from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
+import TestimonialsCarousel from './TestimonialsCarousel';
 
 const ClientsSection = () => {
   // Logos reais de clientes
@@ -61,16 +61,7 @@ const ClientsSection = () => {
     }
   ];
 
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const isMobile = useIsMobile();
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
-    
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
 
   return (
     <section id="clientes" className="py-16 md:py-24 bg-gray-50">
@@ -99,41 +90,8 @@ const ClientsSection = () => {
           ))}
         </div>
         
-        {/* Depoimentos */}
-        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-confiance-navy to-confiance-green"></div>
-          <div className="flex flex-col items-center text-center">
-            <div className="text-5xl text-confiance-green mb-6">"</div>
-            
-            <div className="transition-all duration-500" style={{ opacity: 1 }}>
-              <p className="text-lg md:text-xl text-gray-700 mb-8">
-                {testimonials[currentTestimonial].text}
-              </p>
-              
-              <div>
-                <p className="font-semibold text-confiance-navy">
-                  {testimonials[currentTestimonial].author}
-                </p>
-                <p className="text-sm text-gray-500">
-                  {testimonials[currentTestimonial].position}, {testimonials[currentTestimonial].company}
-                </p>
-              </div>
-            </div>
-            
-            <div className="flex mt-8 space-x-2">
-              {testimonials.map((_, index) => (
-                <button 
-                  key={index}
-                  onClick={() => setCurrentTestimonial(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentTestimonial ? 'bg-confiance-green scale-125' : 'bg-gray-300'
-                  }`}
-                  aria-label={`Ver depoimento ${index + 1}`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
+        {/* Testimonials Carousel */}
+        <TestimonialsCarousel testimonials={testimonials} />
       </div>
     </section>
   );
