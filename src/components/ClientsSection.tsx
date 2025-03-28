@@ -1,41 +1,42 @@
 
 import { useEffect, useState } from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
+import LogoBanner from './LogoBanner';
 
 const ClientsSection = () => {
   // Logos reais de clientes
   const clientLogos = [
     {
-      name: "Nova Alameda Residencial",
-      logo: "/lovable-uploads/d3d95d4f-b7d3-433c-a957-8c4b7d2f9f61.png"
+      src: "/lovable-uploads/d3d95d4f-b7d3-433c-a957-8c4b7d2f9f61.png",
+      alt: "Nova Alameda Residencial"
     },
     {
-      name: "Rossi Mais+ Jardim Imperial",
-      logo: "/lovable-uploads/924a7bc9-ea91-4247-8035-bc7c24760eee.png"
+      src: "/lovable-uploads/924a7bc9-ea91-4247-8035-bc7c24760eee.png",
+      alt: "Rossi Mais+ Jardim Imperial"
     },
     {
-      name: "Rio Prefeitura - Fazenda e Planejamento",
-      logo: "/lovable-uploads/c851a8cc-ea6b-465d-9ca4-57c6430a1ee2.png"
+      src: "/lovable-uploads/c851a8cc-ea6b-465d-9ca4-57c6430a1ee2.png",
+      alt: "Rio Prefeitura - Fazenda e Planejamento"
     },
     {
-      name: "SECTI",
-      logo: "/lovable-uploads/8bb3b941-f955-4e57-a5e3-268e8a91a164.png"
+      src: "/lovable-uploads/8bb3b941-f955-4e57-a5e3-268e8a91a164.png",
+      alt: "SECTI"
     },
     {
-      name: "PRODERJ",
-      logo: "/lovable-uploads/6efda96d-6068-4f3c-86a6-2faadd5746d5.png"
+      src: "/lovable-uploads/6efda96d-6068-4f3c-86a6-2faadd5746d5.png",
+      alt: "PRODERJ"
     },
     {
-      name: "ANTT",
-      logo: "/lovable-uploads/a854899d-a164-42d8-aae6-305417d21314.png"
+      src: "/lovable-uploads/a854899d-a164-42d8-aae6-305417d21314.png",
+      alt: "ANTT"
     },
     {
-      name: "Casa França-Brasil",
-      logo: "/lovable-uploads/629b5e90-4444-4c88-9232-e61cbeca5a54.png"
+      src: "/lovable-uploads/629b5e90-4444-4c88-9232-e61cbeca5a54.png",
+      alt: "Casa França-Brasil"
     },
     {
-      name: "Residencial Gênesis",
-      logo: "/lovable-uploads/e60b3383-4c38-4c5d-954a-c1fc30d71d2e.png"
+      src: "/lovable-uploads/e60b3383-4c38-4c5d-954a-c1fc30d71d2e.png",
+      alt: "Residencial Gênesis"
     }
   ];
 
@@ -83,20 +84,9 @@ const ClientsSection = () => {
           </p>
         </div>
         
-        {/* Logos de clientes */}
-        <div className={`grid ${isMobile ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4'} gap-8 mb-20`}>
-          {clientLogos.map((client, index) => (
-            <div 
-              key={index} 
-              className="flex items-center justify-center p-6 md:p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
-            >
-              <img 
-                src={client.logo} 
-                alt={client.name} 
-                className="max-h-24 md:max-h-28 w-auto object-contain"
-              />
-            </div>
-          ))}
+        {/* Substituir a grade de logos pelo LogoBanner */}
+        <div className="mb-20">
+          <LogoBanner logos={clientLogos} />
         </div>
         
         {/* Depoimentos */}
