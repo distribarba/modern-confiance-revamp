@@ -1,6 +1,20 @@
+
 import ServiceLayout from "../components/ServiceLayout";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const ServiceMaoDeObra = () => {
+  const maoDeObraImages = [
+    "/lovable-uploads/975827ac-3647-45b7-9696-6b414f5b7fc3.png",
+    "/lovable-uploads/f3cba157-0ee6-4e79-b197-ccc6be62d539.png",
+    "/lovable-uploads/5182ca9b-1643-43ac-ab6e-5848d36e7236.png",
+  ];
+
   return (
     <ServiceLayout 
       title="Mão de Obra Temporária" 
@@ -20,12 +34,24 @@ const ServiceMaoDeObra = () => {
             Nossa abordagem personalizada garante o fornecimento de profissionais que realmente atendem às necessidades da sua empresa, contribuindo para a produtividade e qualidade dos seus serviços.
           </p>
         </div>
-        <div>
-          <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-            alt="Equipe de profissionais temporários" 
-            className="rounded-lg shadow-lg w-full h-auto"
-          />
+        <div className="w-full">
+          <Carousel className="w-full">
+            <CarouselContent>
+              {maoDeObraImages.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-1 h-full">
+                    <img 
+                      src={image} 
+                      alt={`Serviço de mão de obra temporária ${index + 1}`} 
+                      className="rounded-lg shadow-lg w-full h-[300px] md:h-[400px] object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
         </div>
       </div>
 
