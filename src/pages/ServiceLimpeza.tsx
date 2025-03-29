@@ -1,7 +1,24 @@
+
 import { Brush } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const ServiceLimpeza = () => {
+  const limpezaImages = [
+    "/lovable-uploads/549c96fc-b3bf-4cba-a6a7-f63224dc4e7e.png",
+    "/lovable-uploads/6b69553d-86c5-4291-a9c8-8795859d8e7e.png",
+    "/lovable-uploads/b0a4221a-26a2-4d3b-9d6c-08dbe5b97081.png",
+    "/lovable-uploads/b5f73328-b0ac-4626-8972-706207632e54.png",
+    "/lovable-uploads/a4f5d370-9a96-4eca-8a7b-f7a0e23eedb1.png",
+    "/lovable-uploads/9a39de78-2ec8-4107-9848-f11215a20175.png",
+  ];
+
   return (
     <ServiceLayout 
       title="Limpeza e Conservação" 
@@ -21,12 +38,24 @@ const ServiceLimpeza = () => {
             Nossos serviços são personalizados de acordo com as necessidades específicas de cada cliente, permitindo um atendimento eficiente e adequado a diferentes tipos de ambientes.
           </p>
         </div>
-        <div>
-          <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-            alt="Equipe de limpeza profissional" 
-            className="rounded-lg shadow-lg w-full h-auto"
-          />
+        <div className="w-full">
+          <Carousel className="w-full">
+            <CarouselContent>
+              {limpezaImages.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-1 h-full">
+                    <img 
+                      src={image} 
+                      alt={`Serviço de limpeza e conservação ${index + 1}`} 
+                      className="rounded-lg shadow-lg w-full h-[300px] md:h-[400px] object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
         </div>
       </div>
 
