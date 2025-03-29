@@ -1,34 +1,30 @@
+
 import { Shield } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
+import ServiceIntro from "../components/services/ServiceIntro";
 
 const ServicePortaria = () => {
+  const portariaImages = [
+    "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  ];
+
+  const introDescription = [
+    "A Confiance oferece serviços completos de portaria, zeladoria e recepção, garantindo o controle de acesso, segurança e uma excelente primeira impressão para visitantes e colaboradores.",
+    "Nossos profissionais são rigorosamente selecionados e treinados para atuar com eficiência, cortesia e atenção aos detalhes, representando adequadamente a imagem da sua empresa ou condomínio.",
+    "Oferecemos soluções personalizadas que se adaptam às necessidades específicas de cada cliente, seja em ambientes corporativos, industriais ou residenciais."
+  ];
+
   return (
     <ServiceLayout 
       title="Portaria, Zeladoria e Recepção" 
       description="Serviços essenciais para manter a boa imagem de uma empresa, indústria ou condomínio."
       backgroundImage="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-confiance-navy">Segurança e excelência no atendimento</h2>
-          <p className="text-gray-600 mb-4">
-            A Confiance oferece serviços completos de portaria, zeladoria e recepção, garantindo o controle de acesso, segurança e uma excelente primeira impressão para visitantes e colaboradores.
-          </p>
-          <p className="text-gray-600 mb-4">
-            Nossos profissionais são rigorosamente selecionados e treinados para atuar com eficiência, cortesia e atenção aos detalhes, representando adequadamente a imagem da sua empresa ou condomínio.
-          </p>
-          <p className="text-gray-600">
-            Oferecemos soluções personalizadas que se adaptam às necessidades específicas de cada cliente, seja em ambientes corporativos, industriais ou residenciais.
-          </p>
-        </div>
-        <div>
-          <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-            alt="Serviço de portaria e recepção" 
-            className="rounded-lg shadow-lg w-full h-auto"
-          />
-        </div>
-      </div>
+      <ServiceIntro 
+        title="Segurança e excelência no atendimento"
+        description={introDescription}
+        images={portariaImages}
+      />
 
       <div className="bg-gray-50 p-8 rounded-lg mb-16">
         <h3 className="text-xl md:text-2xl font-bold mb-6 text-confiance-navy">Nossos serviços incluem:</h3>

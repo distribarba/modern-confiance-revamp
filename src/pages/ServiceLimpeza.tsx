@@ -1,13 +1,7 @@
 
 import { Brush } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import ServiceIntro from "../components/services/ServiceIntro";
 
 const ServiceLimpeza = () => {
   const limpezaImages = [
@@ -19,45 +13,23 @@ const ServiceLimpeza = () => {
     "/lovable-uploads/9a39de78-2ec8-4107-9848-f11215a20175.png",
   ];
 
+  const introDescription = [
+    "Nossa divisão especializada em higiene e conservação oferece soluções completas para manter seu patrimônio em perfeitas condições, garantindo ambientes limpos, agradáveis e saudáveis para seus funcionários e clientes.",
+    "Utilizamos produtos e equipamentos de alta qualidade, seguindo rigorosos protocolos de limpeza e contando com profissionais treinados e qualificados para oferecer o melhor serviço.",
+    "Nossos serviços são personalizados de acordo com as necessidades específicas de cada cliente, permitindo um atendimento eficiente e adequado a diferentes tipos de ambientes."
+  ];
+
   return (
     <ServiceLayout 
       title="Limpeza e Conservação" 
       description="Soluções completas de limpeza, paisagismo e coperagem, além de serviços relacionados a coletas seletivas de resíduos."
       backgroundImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-confiance-navy">Soluções profissionais para ambientes limpos e saudáveis</h2>
-          <p className="text-gray-600 mb-4">
-            Nossa divisão especializada em higiene e conservação oferece soluções completas para manter seu patrimônio em perfeitas condições, garantindo ambientes limpos, agradáveis e saudáveis para seus funcionários e clientes.
-          </p>
-          <p className="text-gray-600 mb-4">
-            Utilizamos produtos e equipamentos de alta qualidade, seguindo rigorosos protocolos de limpeza e contando com profissionais treinados e qualificados para oferecer o melhor serviço.
-          </p>
-          <p className="text-gray-600">
-            Nossos serviços são personalizados de acordo com as necessidades específicas de cada cliente, permitindo um atendimento eficiente e adequado a diferentes tipos de ambientes.
-          </p>
-        </div>
-        <div className="w-full">
-          <Carousel className="w-full">
-            <CarouselContent>
-              {limpezaImages.map((image, index) => (
-                <CarouselItem key={index}>
-                  <div className="p-1 h-full">
-                    <img 
-                      src={image} 
-                      alt={`Serviço de limpeza e conservação ${index + 1}`} 
-                      className="rounded-lg shadow-lg w-full h-[300px] md:h-[400px] object-cover"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="left-2" />
-            <CarouselNext className="right-2" />
-          </Carousel>
-        </div>
-      </div>
+      <ServiceIntro
+        title="Soluções profissionais para ambientes limpos e saudáveis"
+        description={introDescription}
+        images={limpezaImages}
+      />
 
       <div className="bg-gray-50 p-8 rounded-lg mb-16">
         <h3 className="text-xl md:text-2xl font-bold mb-6 text-confiance-navy">Nossos serviços incluem:</h3>

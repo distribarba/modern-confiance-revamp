@@ -1,35 +1,30 @@
 
-import { FileCheck } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
+import ServiceIntro from "../components/services/ServiceIntro";
+import { FileCheck } from "lucide-react";
 
 const ServiceFiscalizacao = () => {
+  const fiscalizacaoImages = [
+    "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  ];
+
+  const introDescription = [
+    "A Confiance oferece um serviço completo de fiscalização que garante o cumprimento de processos e procedimentos, com foco no atendimento de excelência e satisfação dos clientes.",
+    "Nossos fiscais de serviços são cuidadosamente selecionados e treinados em Relações Humanas, garantindo uma abordagem profissional e eficiente na orientação e organização de equipes.",
+    "Com atuação estratégica e olhar crítico, implementamos processos de fiscalização que elevam o padrão de qualidade dos serviços prestados, contribuindo diretamente para a satisfação e fidelização de clientes."
+  ];
+
   return (
     <ServiceLayout 
       title="Fiscalização de Serviços e Clientes" 
       description="Com orientação adequada em Relações Humanas no atendimento ao público, nossos fiscais de serviços, orientam e organizam funcionários no correto cumprimento do dever, em busca da satisfação do cliente."
       backgroundImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-confiance-navy">Fiscalização especializada para qualidade de serviços</h2>
-          <p className="text-gray-600 mb-4">
-            A Confiance oferece um serviço completo de fiscalização que garante o cumprimento de processos e procedimentos, com foco no atendimento de excelência e satisfação dos clientes.
-          </p>
-          <p className="text-gray-600 mb-4">
-            Nossos fiscais de serviços são cuidadosamente selecionados e treinados em Relações Humanas, garantindo uma abordagem profissional e eficiente na orientação e organização de equipes.
-          </p>
-          <p className="text-gray-600">
-            Com atuação estratégica e olhar crítico, implementamos processos de fiscalização que elevam o padrão de qualidade dos serviços prestados, contribuindo diretamente para a satisfação e fidelização de clientes.
-          </p>
-        </div>
-        <div>
-          <img 
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-            alt="Fiscalização de serviços profissional" 
-            className="rounded-lg shadow-lg w-full h-auto"
-          />
-        </div>
-      </div>
+      <ServiceIntro 
+        title="Fiscalização especializada para qualidade de serviços"
+        description={introDescription}
+        images={fiscalizacaoImages}
+      />
 
       <div className="bg-gray-50 p-8 rounded-lg mb-16">
         <h3 className="text-xl md:text-2xl font-bold mb-6 text-confiance-navy">Nossa abordagem inclui:</h3>

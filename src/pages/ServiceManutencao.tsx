@@ -1,34 +1,30 @@
+
 import { Wrench } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
+import ServiceIntro from "../components/services/ServiceIntro";
 
 const ServiceManutencao = () => {
+  const manutencaoImages = [
+    "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  ];
+
+  const introDescription = [
+    "A Confiance oferece serviços completos de manutenção predial, atuando na conservação, operação e segurança de edificações residenciais, comerciais e industriais, prolongando a vida útil do seu patrimônio.",
+    "Nossa equipe de profissionais qualificados realiza diagnósticos precisos e intervenções eficientes, garantindo o funcionamento adequado de todos os sistemas e estruturas do seu imóvel.",
+    "Trabalhamos de forma preventiva e corretiva, minimizando a ocorrência de problemas e resolvendo com agilidade qualquer situação que possa surgir."
+  ];
+
   return (
     <ServiceLayout 
       title="Manutenção Predial" 
       description="Serviços de engenharia voltados para conservação, operação, automação e segurança das edificações residenciais, comerciais ou industriais."
       backgroundImage="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-confiance-navy">Manutenção eficiente para sua edificação</h2>
-          <p className="text-gray-600 mb-4">
-            A Confiance oferece serviços completos de manutenção predial, atuando na conservação, operação e segurança de edificações residenciais, comerciais e industriais, prolongando a vida útil do seu patrimônio.
-          </p>
-          <p className="text-gray-600 mb-4">
-            Nossa equipe de profissionais qualificados realiza diagnósticos precisos e intervenções eficientes, garantindo o funcionamento adequado de todos os sistemas e estruturas do seu imóvel.
-          </p>
-          <p className="text-gray-600">
-            Trabalhamos de forma preventiva e corretiva, minimizando a ocorrência de problemas e resolvendo com agilidade qualquer situação que possa surgir.
-          </p>
-        </div>
-        <div>
-          <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-            alt="Manutenção predial profissional" 
-            className="rounded-lg shadow-lg w-full h-auto"
-          />
-        </div>
-      </div>
+      <ServiceIntro 
+        title="Manutenção eficiente para sua edificação"
+        description={introDescription}
+        images={manutencaoImages}
+      />
 
       <div className="bg-gray-50 p-8 rounded-lg mb-16">
         <h3 className="text-xl md:text-2xl font-bold mb-6 text-confiance-navy">Áreas de atuação:</h3>
