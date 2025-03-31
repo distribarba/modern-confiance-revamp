@@ -84,8 +84,8 @@ const ClientsSection = () => {
           </p>
         </div>
         
-        {/* LogoBanner */}
-        <div className="mb-20">
+        {/* LogoBanner com largura total */}
+        <div className="mb-20 -mx-4 md:-mx-6 overflow-hidden">
           <LogoBanner logos={clientLogos} />
         </div>
         
