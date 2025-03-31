@@ -33,7 +33,7 @@ const ServiceIntro = ({ title, description, images }: ServiceIntroProps) => {
                 <div className="p-1 h-full">
                   <img 
                     src={image} 
-                    alt={`Serviço ${index + 1}`} 
+                    alt={`Serviço de fiscalização ${index + 1}`} 
                     className="rounded-lg shadow-lg w-full h-[300px] md:h-[400px] object-cover"
                   />
                 </div>

@@ -5,7 +5,10 @@ import { FileCheck } from "lucide-react";
 
 const ServiceFiscalizacao = () => {
   const fiscalizacaoImages = [
-    "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "/lovable-uploads/314cfc81-0010-49b3-acba-854c62f2b35e.png", // Imagem do carro da Confiance
+    "/lovable-uploads/85ee4b20-85ef-426e-a4f1-b823ba14a86a.png", // Imagem da reunião com equipe
+    "/lovable-uploads/5b4f8b7f-87ac-4297-b9b2-7d6f354e2d81.png", // Imagem da fiscalização no Mercadão do Barreto
+    "/lovable-uploads/a2b7c9c4-cf1a-440a-8100-e356f8a06d08.png", // Imagem da limpeza de fachada
   ];
 
   const introDescription = [
@@ -18,7 +21,7 @@ const ServiceFiscalizacao = () => {
     <ServiceLayout 
       title="Fiscalização de Serviços e Clientes" 
       description="Com orientação adequada em Relações Humanas no atendimento ao público, nossos fiscais de serviços, orientam e organizam funcionários no correto cumprimento do dever, em busca da satisfação do cliente."
-      backgroundImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      backgroundImage="/lovable-uploads/314cfc81-0010-49b3-acba-854c62f2b35e.png"
     >
       <ServiceIntro 
         title="Fiscalização especializada para qualidade de serviços"
