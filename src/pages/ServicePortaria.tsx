@@ -1,11 +1,12 @@
-
 import { Shield } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
 import ServiceIntro from "../components/services/ServiceIntro";
 
 const ServicePortaria = () => {
   const portariaImages = [
-    "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    "/lovable-uploads/3738dd0f-e7ea-4a6d-ac54-3dab18dcef8d.png", // Imagem da recepção com campainha
+    "/lovable-uploads/6da7d691-32ab-4f3a-baf8-bcdb5817b1c6.png", // Imagem do segurança monitorando câmeras
+    "/lovable-uploads/44bfdd6e-7ead-47c3-9684-5b4030e5849e.png"  // Imagem do funcionário em serviço de zeladoria
   ];
 
   const introDescription = [
