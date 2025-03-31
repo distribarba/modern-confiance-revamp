@@ -1,11 +1,12 @@
-
 import { Wrench } from "lucide-react";
 import ServiceLayout from "../components/ServiceLayout";
 import ServiceIntro from "../components/services/ServiceIntro";
 
 const ServiceManutencao = () => {
   const manutencaoImages = [
-    "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    "/lovable-uploads/6c5a7a0d-f5de-4df0-b782-464a54803434.png", // Imagem da fachada de vidro em reforma
+    "/lovable-uploads/3cdc717d-06df-4e82-a17c-92b1416468b5.png", // Imagem do prédio com funcionário em manutenção
+    "/lovable-uploads/8af16638-2da0-4eee-a347-0ce1e1e11f05.png", // Imagem do funcionário instalando equipamento
   ];
 
   const introDescription = [
@@ -18,7 +19,7 @@ const ServiceManutencao = () => {
     <ServiceLayout 
       title="Manutenção Predial" 
       description="Serviços de engenharia voltados para conservação, operação, automação e segurança das edificações residenciais, comerciais ou industriais."
-      backgroundImage="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      backgroundImage="/lovable-uploads/3cdc717d-06df-4e82-a17c-92b1416468b5.png"
     >
       <ServiceIntro 
         title="Manutenção eficiente para sua edificação"
